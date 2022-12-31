@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet"/>
-
+        @vite('resources/css/app.css')
+        <script src="//unpkg.com/alpinejs" defer></script>
+        
         <title>Gigs Hotel</title>
 
         <style>
@@ -13,9 +14,7 @@
             }
         </style>
     </head>
-    <body class="">
-        <div class="">
-            <h1 class="text-red-600">Hello World</h1>
-        </div>
+    <body>
+        {{ $slot }}
     </body>
 </html>
